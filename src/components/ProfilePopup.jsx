@@ -1,6 +1,5 @@
 'use client'
 
 export default function ProfilePopup({ profile }) {
-  console.log(profile)
-  return <div className="overflow-hidden">hey</div>
+  return <div className="overflow-hidden">{profile.Name}</div>
 }
