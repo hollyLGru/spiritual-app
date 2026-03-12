@@ -1,6 +1,6 @@
 'use-client'
 export default function Header({}) {
-  const nav = ['Home', 'Guides', 'Experiences', 'Map', 'About', 'Contact']
+  const nav = ['Home', 'Guides', 'Experiences', 'Map', 'About']
 
   return (
     <div>
@@ -32,7 +32,7 @@ export default function Header({}) {
             {nav.map((item) => (
               <a
                 key={item}
-                href="#"
+                href={`/${item.toLowerCase()}`}
                 className={`transition ${
                   item === 'Home'
                     ? 'rounded-full bg-[#b8875c] px-5 py-2 text-white shadow-sm'

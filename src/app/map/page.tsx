@@ -1,10 +1,12 @@
 import Map from '@/components/Map'
 import profiles from '@/data/profiles'
+import Header from '@/components/Header'
 
 export default function MapPage() {
   return (
-    <main className="p-6">
+    <div>
+      <Header />
       <Map profiles={profiles} />
-    </main>
+    </div>
   )
 }
