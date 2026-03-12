@@ -1,77 +1,6 @@
-export default function Test() {
-  const nav = ['Home', 'Guides', 'Experiences', 'Map', 'Community', 'Contact']
-  const services = [
-    {
-      title: 'Meditation & Breathwork',
-      desc: 'Find grounded teachers for private sessions, circles, and guided journeys.',
-      badge: 'Calm & Centering',
-    },
-    {
-      title: 'Somatic & Energy Healing',
-      desc: 'Explore practitioners offering body-based healing, Reiki, and nervous system support.',
-      badge: 'Embodied Healing',
-    },
-    {
-      title: 'Intuitive Readings',
-      desc: 'Connect with numerologists, psychics, tarot readers, and past-life guides.',
-      badge: 'Insight & Clarity',
-    },
-  ]
-
-  const tags = [
-    'Meditation',
-    'Somatic Healing',
-    'Numerology',
-    'Psychic Readings',
-    'Past Life Regression',
-    'Breathwork',
-  ]
-
+export default function HomePage({ services, tags }) {
   return (
     <div className="min-h-screen bg-[#f6f1e7] text-[#3d342b]">
-      <div className="w-full bg-[#5f6d57] text-[#f8f3eb]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 text-sm">
-          <div className="flex flex-wrap items-center gap-6 opacity-90">
-            <span>Earth-rooted spiritual discovery</span>
-            <span>Find healers, readers, and gatherings near you</span>
-          </div>
-          <div className="flex items-center gap-4 opacity-90">
-            <span>Instagram</span>
-            <span>Community</span>
-            <span>Login</span>
-          </div>
-        </div>
-      </div>
-
-      <header className="border-b border-[#d9ccb7] bg-[#f8f3eb]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
-          <div>
-            <div className="font-serif text-4xl leading-none text-[#7b5c45]">
-              SoulPath
-            </div>
-            <div className="mt-1 text-sm tracking-[0.25em] text-[#8a7a67] uppercase">
-              Discover your spiritual community
-            </div>
-          </div>
-
-          <nav className="hidden items-center gap-8 text-sm font-medium md:flex">
-            {nav.map((item) => (
-              <a
-                key={item}
-                href="#"
-                className={`transition ${
-                  item === 'Home'
-                    ? 'rounded-full bg-[#b8875c] px-5 py-2 text-white shadow-sm'
-                    : 'text-[#5b4d40] hover:text-[#7b5c45]'
-                }`}
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </header>
-
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(181,147,112,0.25),_transparent_35%),radial-gradient(circle_at_bottom_left,_rgba(95,109,87,0.18),_transparent_30%)]" />
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 md:grid-cols-[1.1fr_0.9fr] md:py-24">
@@ -86,16 +15,6 @@ export default function Test() {
               Browse spiritual practitioners, explore local offerings on a map,
               and connect through grounded, heart-led experiences.
             </p>
-
-            <div className="mt-8 flex flex-col gap-4 rounded-[28px] border border-[#dbcdb8] bg-white/80 p-4 shadow-sm backdrop-blur sm:flex-row">
-              <input
-                placeholder="Search meditation, reiki, psychics, cities..."
-                className="flex-1 rounded-full border border-[#e4d9ca] bg-[#fcfaf6] px-5 py-3 text-[#4e4339] outline-none placeholder:text-[#a08f7d]"
-              />
-              <button className="rounded-full bg-[#7b5c45] px-6 py-3 font-medium text-white shadow-sm transition hover:bg-[#6b4f3c]">
-                Explore
-              </button>
-            </div>
 
             <div className="mt-6 flex flex-wrap gap-3">
               {tags.map((tag) => (
@@ -170,9 +89,6 @@ export default function Test() {
             <h3 className="mt-2 font-serif text-4xl text-[#3a2f25]">
               Find services by path and practice
             </h3>
-          </div>
-          <div className="hidden text-sm text-[#7b6d61] md:block">
-            Earthy, warm, and community-centered
           </div>
         </div>
 
