@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function HomePage({ services, tags }) {
   return (
     <div className="min-h-screen bg-[#f6f1e7] text-[#3d342b]">
@@ -70,12 +72,18 @@ export default function HomePage({ services, tags }) {
           </div>
 
           <div className="flex gap-3">
-            <button className="rounded-full bg-[#5f6d57] px-6 py-3 font-medium text-white">
+            <Link
+              href={`/guides`}
+              className="rounded-full bg-[#5f6d57] px-6 py-3 font-medium text-white"
+            >
               Browse guides
-            </button>
-            <button className="rounded-full border border-[#cdbca6] bg-[#efe6d9] px-6 py-3 font-medium text-[#5a4b3c]">
+            </Link>
+            <Link
+              href={`/map`}
+              className="rounded-full border border-[#cdbca6] bg-[#efe6d9] px-6 py-3 font-medium text-[#5a4b3c]"
+            >
               View map
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -113,9 +121,12 @@ export default function HomePage({ services, tags }) {
                 {service.title}
               </h4>
               <p className="mt-3 leading-7 text-[#65584d]">{service.desc}</p>
-              <button className="mt-6 text-sm font-medium text-[#7b5c45] underline underline-offset-4">
+              <Link
+                href={`/services/${service.title}`}
+                className="mt-6 text-sm font-medium text-[#7b5c45] underline underline-offset-4"
+              >
                 Explore this category
-              </button>
+              </Link>
             </div>
           ))}
         </div>
