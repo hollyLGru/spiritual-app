@@ -7,7 +7,6 @@ export default function Header({}) {
       <div className="w-full bg-[#5f6d57] text-[#f8f3eb]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 text-sm">
           <div className="flex flex-wrap items-center gap-6 opacity-90">
-            <span>Earth-rooted spiritual discovery</span>
             <span>Find healers, readers, and gatherings near you</span>
           </div>
           <div className="flex items-center gap-4 opacity-90">
@@ -32,7 +31,7 @@ export default function Header({}) {
             {nav.map((item) => (
               <a
                 key={item}
-                href={`/${item.toLowerCase()}`}
+                href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
                 className={`transition ${
                   item === 'Home'
                     ? 'rounded-full bg-[#b8875c] px-5 py-2 text-white shadow-sm'
