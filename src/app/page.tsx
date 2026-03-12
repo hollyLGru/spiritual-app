@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <HomePage services={services} tags={tags} />
+      <HomePage services={services} tags={tags} profiles={profiles} />
     </main>
   )
 }

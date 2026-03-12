@@ -30,7 +30,7 @@ const profiles = [
     phone: '570-274-3260',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    tags: ['meditation', 'tarot', 'psychic'],
+    tags: ['Intuitive Guidance', 'tarot', 'psychic', 'Trauma-informed'],
     gender: 'female',
   },
   {

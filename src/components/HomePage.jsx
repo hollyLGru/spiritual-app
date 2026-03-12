@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import ProfilePreviewCard from './ProfilePreviewCard'
 
-export default function HomePage({ services, tags }) {
+export default function HomePage({ services, tags, profiles }) {
   return (
     <div className="min-h-screen bg-[#f6f1e7] text-[#3d342b]">
       <section className="relative overflow-hidden">
@@ -30,7 +31,7 @@ export default function HomePage({ services, tags }) {
             </div>
           </div>
 
-          <div className="relative z-10">
+          {/* <div className="relative z-10">
             <div className="rounded-[36px] border border-[#d9ccb7] bg-[#f8f3eb] p-4 shadow-xl shadow-[#a08a6c]/10">
               <div className="rounded-[28px] bg-[linear-gradient(140deg,#b98d67_0%,#8d735c_35%,#5f6d57_100%)] p-8 text-white">
                 <div className="text-sm tracking-[0.3em] text-white/80 uppercase">
@@ -55,7 +56,8 @@ export default function HomePage({ services, tags }) {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <ProfilePreviewCard profile={profiles[1]} />
         </div>
       </section>
 

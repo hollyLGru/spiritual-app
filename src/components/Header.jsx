@@ -4,7 +4,7 @@ export default function Header({}) {
 
   return (
     <div>
-      <div className="w-full bg-[#5f6d57] text-[#f8f3eb]">
+      <div className="w-full bg-[#5f6d57] text-[#faf8f4]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 text-sm">
           <div className="flex flex-wrap items-center gap-6 opacity-90">
             <span>Find healers, readers, and gatherings near you</span>
@@ -16,7 +16,7 @@ export default function Header({}) {
         </div>
       </div>
 
-      <header className="border-b border-[#d9ccb7] bg-[#f8f3eb]">
+      <header className="border-b border-[#d9ccb7] bg-[#fbf9f7]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
           <div>
             <div className="font-serif text-4xl leading-none text-[#7b5c45]">
